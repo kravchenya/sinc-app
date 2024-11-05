@@ -1,0 +1,49 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+mat-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+mat-sidenav-container {
+  flex: 1;
+  margin-top: 64px; /* Height of toolbar */
+}
+
+.app-sidenav {
+  width: 250px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+mat-nav-list a {
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+mat-icon {
+  margin-right: 8px;
+}
+
+.bask-et-count {
+  padding-right: 2rem;
+  margin-right: 3rem;
+}

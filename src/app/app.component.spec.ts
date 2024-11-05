@@ -14,16 +14,18 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'sinc-ap' title`, () => {
+  it(`should have the 'sinc-app' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('sinc-ap');
+    expect(app.title).toEqual('sinc-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, sinc-ap');
+    expect(compiled.querySelector('h1')?.textContent).toContain(
+      'Hello, sinc-app'
+    );
   });
 });

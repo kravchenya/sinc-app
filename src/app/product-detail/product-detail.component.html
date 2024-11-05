@@ -1,0 +1,15 @@
+<div *ngIf="loading">
+  <p>Loading</p>
+  <p>&nbsp;</p>
+</div>
+
+<div class="product-detail" *ngIf="product">
+  <h2>{{ product.title }}</h2>
+  <img [src]="product.image" [alt]="product.title" />
+  <p class="price">{{ product.price }}</p>
+  <p class="description">{{ product.description }}</p>
+  <div class="rating">
+    Rating: {{ product.rating.rate }} ({{ product.rating.count }} reviews)
+  </div>
+  <!-- <button (click)="goBack()">Back to List</button> -->
+</div>
